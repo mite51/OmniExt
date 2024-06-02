@@ -1,0 +1,5 @@
+load cloud point data
+
+run duster
+
+run segment anything

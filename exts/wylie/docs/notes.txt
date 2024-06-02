@@ -1,0 +1,7 @@
+VS Code Link?
+VSCODE KIT DEBUGGER
+-----------------------------------------
+UMR to fully reload torch?
+-----------------------------------------
+create a pip archive
+pip download -d c:\GitDepots\test\pip_archive gradio

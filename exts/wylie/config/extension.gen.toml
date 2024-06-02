@@ -1,0 +1,18 @@
+
+[package]
+    archivePath = "http://d4i3qtqj3r0z5.cloudfront.net/omni.pip.torch-1_13_1-1.13.0%2B105.1.wx64.zip"
+
+    [package.target]
+
+        [package.target.platform]
+            0 = "windows-x86_64"
+
+        [package.target.kit]
+            0 = "105.1"
+
+    [package.publish]
+        kitVersion = "105.1+master.119804.00010170.tc"
+        date = 1688696551
+        buildNumber = "2022.2.0-beta.3+main.219.07efffe2.tc"
+        repoName = "kit-pip-ml"
+        signed = 1
