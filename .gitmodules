@@ -1,0 +1,3 @@
+[submodule "exts/wylie/dust3r"]
+	path = exts/wylie/dust3r
+	url = https://github.com/naver/dust3r.git
