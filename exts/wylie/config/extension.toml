@@ -42,37 +42,18 @@ archiveDirs = [""]
 # Commands passed to pip install before extension gets enabled. Can also contain flags, like `--upgrade`, `--no--index`, etc.
 # Refer to: https://pip.pypa.io/en/stable/reference/requirements-file-format/
 requirements = [
-    #"torch",
-    #"torchvision",
     "roma",
     "gradio",
     "matplotlib",
     "tqdm",
-    #"opencv-python",
     "scipy",
     "einops",
     "trimesh",
     "tensorboard",
-    #"pyglet<2",
-    #"huggingface-hub[torch]>=0.22",
 ]
 
 # Optional list of modules to import before (check) and after pip install if different from packages in requirements.
-modules = [
-    #"torch",
-    #"torchvision",
-    "roma",
-    "gradio",
-    "matplotlib",
-    "tqdm",
-    #"opencv-python",
-    "scipy",
-    "einops",
-    "trimesh",
-    "tensorboard",
-    #"pyglet<2",
-    #"huggingface-hub[torch]>=0.22",
-]
+modules = []
 
 
 # Allow going to online index. Required to be set to true for pip install call.
@@ -87,6 +68,6 @@ use_online_index = true
 [[python.module]]
 name = "wylie"
 
-#[[python.module]]
-#path = "torch-1-13-1"
+[[python.module]]
+path = "dust3r"
 

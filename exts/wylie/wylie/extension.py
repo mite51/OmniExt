@@ -3,32 +3,23 @@ import omni.ext
 import omni.ui as ui
 from pathlib import Path
 
-#import numpy
-import scipy
-import einops
-#import trimesh
-
-#import sklearn
-#import gradio
-
-
 # omni.kit.pipapi extension is required
 import omni.kit.pipapi
-pip_packages = [
+_pip_packages = [
     ["torch"],
     ["torchvision"],
     ["opencv-python"],
     ["pyglet", "2.0.15"],
-    ["huggingface-hub[torch]","0.23.2"],
+    #["huggingface-hub[torch]","0.23.2"],
 ]
 
-for pip_package in pip_packages:
-    if len(pip_package) == 2:
-        carb.log_error(f"pipapi.install {pip_package[0]} version={pip_package[1]}")
-        omni.kit.pipapi.install(package=pip_package[0], version={pip_package[1]})
+for _pip_package in _pip_packages:
+    if len(_pip_package) == 2:
+        carb.log_error(f"pipapi.install {_pip_package[0]} version={_pip_package[1]}")
+        omni.kit.pipapi.install(package=_pip_package[0], version={_pip_package[1]})
     else:
-        carb.log_error(f"pipapi.install {pip_package[0]}")
-        omni.kit.pipapi.install(package=pip_package[0])          
+        carb.log_error(f"pipapi.install {_pip_package[0]}")
+        omni.kit.pipapi.install(package=_pip_package[0])          
 
 
 # Functions and vars are available to other extension as usual in python: `example.python_ext.some_public_function(x)`
@@ -98,13 +89,15 @@ class wylie(omni.ext.IExt):
                     import cv2
                     import pyglet
                     import huggingface_hub
+                    import dust3r.dust3r
+
                     version_number = torch.__version__.split("+")[0]
                     cuda_is_available = torch.cuda.is_available()
                     print(f"*** torch version = {version_number} {cuda_is_available}")
-                    print(dir(torchvision))
+                    #print(dir(torchvision))
                     #print(dir(cv2))
-                    print(dir(pyglet))
-                    print(dir(huggingface_hub))
+                    #print(dir(pyglet))
+                    #print(dir(huggingface_hub))
                     
 
 
